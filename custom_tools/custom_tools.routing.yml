@@ -1,0 +1,7 @@
+custom_tools.add:
+  path: '/page_json/{site_api_key}/{node}'
+  defaults:
+    _title: 'Call for JSON representation of node'
+    _controller: '\Drupal\custom_tools\Controller\JsonRepresentationController::jsonViewAccess'
+  requirements:
+    _permission: 'access content'
